@@ -1,11 +1,25 @@
 <template>
-  <v-layout>
-    Home
-  </v-layout>
+  <v-btn @click="notify">
+    Summon Global Snackbar
+  </v-btn>
 </template>
 
 <script>
-export default {
-  //
-};
+  import { call } from 'vuex-pathify'
+
+  export default {
+    data: () => ({}),
+    methods: {
+      updateSnackbar: call('appSnackbar/setSnackbar'),
+      notify () {
+        let status = {
+          show: true,
+          text: 'Request Received',
+          color: 'success',
+          timeout: 3000
+        }
+        this.updateSnackbar(status)
+      }
+    }
+  }
 </script>
