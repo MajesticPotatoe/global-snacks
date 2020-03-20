@@ -3,7 +3,6 @@
     v-model="snackbar.show"
     :color="snackbar.color"
     :timeout="snackbar.timeout"
-    auto-height
     right
     top
   >
@@ -25,7 +24,7 @@
   export default {
     data: () => ({}),
     computed: {
-      ...sync('appSnackbar/*')
-    }
+      ...sync('appSnackbar/*'),
+    },
   }
 </script>

@@ -2,7 +2,7 @@
   <v-app>
     <app-snackbar />
     <v-content>
-      <v-container grid-list-xl text-xs-center>
+      <v-container class="text-center">
         <router-view />
       </v-container>
     </v-content>
@@ -14,8 +14,8 @@
   export default {
     name: 'App',
     components: {
-      AppSnackbar: () => import(/* webpackChunkName: "app-snackbar" */ '@/components/AppSnackbar')
+      AppSnackbar: () => import(/* webpackChunkName: "app-snackbar" */ '@/components/AppSnackbar'),
     },
-    data: () => ({})
+    data: () => ({}),
   }
 </script>

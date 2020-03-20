@@ -5,8 +5,8 @@ const state = {
     show: false,
     text: 'Message',
     color: 'success',
-    timeout: 2000
-  }
+    timeout: 2000,
+  },
 }
 
 const mutations = make.mutations(state)
@@ -16,5 +16,5 @@ export default {
   namespaced: true,
   actions,
   state,
-  mutations
+  mutations,
 }

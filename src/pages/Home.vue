@@ -12,14 +12,14 @@
     methods: {
       updateSnackbar: call('appSnackbar/setSnackbar'),
       notify () {
-        let status = {
+        const status = {
           show: true,
           text: 'Request Received',
           color: 'success',
-          timeout: 3000
+          timeout: 3000,
         }
         this.updateSnackbar(status)
-      }
-    }
+      },
+    },
   }
 </script>

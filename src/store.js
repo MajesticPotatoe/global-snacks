@@ -8,14 +8,14 @@ import appSnackbar from '@/store/app-snackbar'
 Vue.use(Vuex)
 
 const plugins = [
-  pathify.plugin
+  pathify.plugin,
 ]
 
 const modules = {
-  appSnackbar
+  appSnackbar,
 }
 
 export default new Vuex.Store({
   plugins,
-  modules
+  modules,
 })
